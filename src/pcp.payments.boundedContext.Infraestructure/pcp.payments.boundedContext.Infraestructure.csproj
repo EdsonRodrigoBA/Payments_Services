@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\pcp.payments.boundedContext.Core\pcp.payments.boundedContext.Core.csproj" />
+    <ProjectReference Include="..\pcp.payments.boundedContext.Domain\pcp.payments.boundedContext.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
