@@ -1,4 +1,6 @@
-﻿using pcp.payments.boundedContext.Core.DomainObjects;
+using pcp.payments.boundedContext.Core.DomainObjects;
+using pcp.payments.boundedContext.Domain.ValueObjects;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,19 +15,28 @@ namespace pcp.payments.boundedContext.Domain.Entities
         public decimal valor { get; private set; }
         public List<Pagamento>  pagamento { get;  set; }
         public DateTime dataUltimoPagamento { get; private set; }
-
-        public Compra(Guid clienteId, decimal valor)
+        public ImpostoCompra imposto { get; set; }
+        public Compra(Guid clienteId, decimal valor, ImpostoCompra imposto)
         {
-            Validacoes.ValidarSeMenorQueMinimo(valor, 00.1M, "O valor da compra é invalido.");
-            Validacoes.ValidaSeIgual(clienteId, Guid.Empty, "O cliente informado na compra é invalido.");
+
 
             this.clienteId = clienteId;
             this.valor = valor;
+            this.imposto = imposto;
+            Validar();
         }
 
         public void AtualizarDataUltimoPagamento(DateTime dataPagamento)
         {
             dataUltimoPagamento = dataPagamento;
+        }
+
+        public void Validar()
+        {
+            Validacoes.ValidarSeMenorQueMinimo(valor, 00.1M, "O valor da compra é invalido.");
+            Validacoes.ValidaSeIgual(clienteId, Guid.Empty, "O cliente informado na compra é invalido.");
+            Validacoes.ValidarSeNulo(imposto, "O valor do Imposto  é invalido.");
+
         }
         public Compra() { }
 

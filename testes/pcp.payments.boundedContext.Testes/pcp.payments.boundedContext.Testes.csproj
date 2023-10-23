@@ -21,4 +21,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\pcp.payments.boundedContext.Core\pcp.payments.boundedContext.Core.csproj" />
+    <ProjectReference Include="..\..\src\pcp.payments.boundedContext.Domain\pcp.payments.boundedContext.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -17,17 +17,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Testes", "6 - Testes", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - WebApps", "7 - WebApps", "{84A918C2-47E2-4C6D-A49E-3058A5ED61C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.Domain", "src\pcp.payments.boundedContext.Domain\pcp.payments.boundedContext.Domain.csproj", "{1D567939-3713-4FCA-AE32-55A9EA38C6D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pcp.payments.boundedContext.Domain", "src\pcp.payments.boundedContext.Domain\pcp.payments.boundedContext.Domain.csproj", "{1D567939-3713-4FCA-AE32-55A9EA38C6D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.Core", "src\pcp.payments.boundedContext.Core\pcp.payments.boundedContext.Core.csproj", "{240C5314-A79A-428C-9277-30560E812846}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pcp.payments.boundedContext.Core", "src\pcp.payments.boundedContext.Core\pcp.payments.boundedContext.Core.csproj", "{240C5314-A79A-428C-9277-30560E812846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.Application", "src\pcp.payments.boundedContext.Application\pcp.payments.boundedContext.Application.csproj", "{C68F95D7-4F83-468E-9327-A8E1EB438469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pcp.payments.boundedContext.Application", "src\pcp.payments.boundedContext.Application\pcp.payments.boundedContext.Application.csproj", "{C68F95D7-4F83-468E-9327-A8E1EB438469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.Infraestructure", "src\pcp.payments.boundedContext.Infraestructure\pcp.payments.boundedContext.Infraestructure.csproj", "{2746424B-914F-4DD6-8D7A-DFF7A6B91BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pcp.payments.boundedContext.Infraestructure", "src\pcp.payments.boundedContext.Infraestructure\pcp.payments.boundedContext.Infraestructure.csproj", "{2746424B-914F-4DD6-8D7A-DFF7A6B91BEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.WebApi.Payments", "src\pcp.payments.boundedContext.WebApi.Payments\pcp.payments.boundedContext.WebApi.Payments.csproj", "{B4A4EF84-D4AC-48B8-A422-A29B9CD66AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pcp.payments.boundedContext.WebApi.Payments", "src\pcp.payments.boundedContext.WebApi.Payments\pcp.payments.boundedContext.WebApi.Payments.csproj", "{B4A4EF84-D4AC-48B8-A422-A29B9CD66AC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.DependencyInjection", "src\pcp.payments.boundedContext.DependencyInjection\pcp.payments.boundedContext.DependencyInjection.csproj", "{368FE2C8-BDF0-43D9-A95A-76AE331AF1FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pcp.payments.boundedContext.DependencyInjection", "src\pcp.payments.boundedContext.DependencyInjection\pcp.payments.boundedContext.DependencyInjection.csproj", "{368FE2C8-BDF0-43D9-A95A-76AE331AF1FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcp.payments.boundedContext.Testes", "testes\pcp.payments.boundedContext.Testes\pcp.payments.boundedContext.Testes.csproj", "{2AD9A9F4-0511-4A98-9EF6-0E08B8FDDF19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{368FE2C8-BDF0-43D9-A95A-76AE331AF1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{368FE2C8-BDF0-43D9-A95A-76AE331AF1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{368FE2C8-BDF0-43D9-A95A-76AE331AF1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD9A9F4-0511-4A98-9EF6-0E08B8FDDF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD9A9F4-0511-4A98-9EF6-0E08B8FDDF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD9A9F4-0511-4A98-9EF6-0E08B8FDDF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD9A9F4-0511-4A98-9EF6-0E08B8FDDF19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{2746424B-914F-4DD6-8D7A-DFF7A6B91BEE} = {6337A6D7-29D5-429F-A446-F368FB3AFAAB}
 		{B4A4EF84-D4AC-48B8-A422-A29B9CD66AC2} = {84A918C2-47E2-4C6D-A49E-3058A5ED61C2}
 		{368FE2C8-BDF0-43D9-A95A-76AE331AF1FA} = {22CB9427-119A-4271-ACD5-8BB80B44C110}
+		{2AD9A9F4-0511-4A98-9EF6-0E08B8FDDF19} = {C609CA5B-76E1-4D04-BD19-0F2E61F986AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A40BDB98-6658-448E-8DC5-1E950E98C40D}
