@@ -1,3 +1,3 @@
 # Payments_Services
-Microserviço de processar pagamento
+Microserviço para processar pagamento Utilizando tecnicas de DDD
 
